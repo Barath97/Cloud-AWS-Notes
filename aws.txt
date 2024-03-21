@@ -1,0 +1,194 @@
+what is data?
+    Data refers to raw facts, figures, observations, or information that can be collected, 
+    stored, and processed. It can take various forms, including numbers, text, images, 
+    audio, video, and more. Data can be structured, such as in databases where it's 
+    organized into tables with defined relationships, or unstructured, such as in text 
+    documents or multimedia files.
+
+There are two types of software :
+    * Application software 
+    * System software
+
+Application software:
+    Collection of programs is called Application software.
+
+System software:
+    System software = Operating System
+
+Operating System:
+    Interface between user and machine(computer hardware).
+    Resources manager of a computer.
+    It will manage the processes, memory and files.
+    An operating system (OS) is a system software that connects a computer user with the
+     computer's hardware. It is the main system software that allows a device to run.
+    The software that contains the core components of the operating system is called the
+    Kernal.
+
+Kernal:
+    The kernel is a core component of an operating system and serves as the main interface
+    between the computer's hardware and OS. The kernel enables multiple applications to 
+    share hardware resources by providing access to CPU, memory, disk I/O, and networking.
+
+Different types of OS:
+    *Linux
+    *Microsoft Windows
+    *Apple Mac OS
+
+types of OS:
+    Client OS 
+    Server OS 
+
+Client OS:
+    A client operating system (OS) is a simple operating system that runs on various client
+    devices, such as computers, laptops, smartphones, and tablets. It is different from
+    centralized servers because it only supports one user. Client OS manages local resources, 
+    including files, printers, and peripheral devices. It is used to access services 
+    provided by servers, such as Windows, Android, Firefox, Symbian, and macOS.
+
+Server OS:
+    Imagine you have a small business and you want to set up a server to store all your files,
+    manage emails, host a website, and run some custom business applications. You'd need a server
+    operating system to handle all these tasks efficiently.
+    One popular example of a server operating system is Microsoft Windows Server. 
+    It's designed specifically for servers and comes with features tailored for managing 
+    networks, storing data, hosting websites, running applications, and more. With Windows Server,
+    you can set up user accounts, manage permissions, configure security settings, and ensure that 
+    your business operations run smoothly.
+    So, in this scenario, Windows Server would be the server operating system you'd install on your 
+    server computer to manage all your business needs effectively.
+
+Types of services:
+    client = Service receiver
+    server = service provider
+
+How server is controlling client computer?
+    * Server computers and client computers are connected in "Network".
+    * we need to configure server computer configuration in client computer.
+    * client request will handle by the server and it will respond to the client.
+    
+How data transfer between two computers?
+    Application > Data > NIC(Network Interface card) > Packet > transfer in cable(RJ45) > Packet > NIC > Data > Application
+
+IP Address:
+    An IP address, or Internet Protocol address, is a unique number that identifies a 
+    device connected to the internet or a local network. IP addresses contain location 
+    information and allow devices to communicate with each other. The internet needs IP 
+    addresses to differentiate between different devices, such as computers, routers, and websites.
+
+Subnetting:
+    In networking it means taking a large group of IP addresses and splitting them into
+    smaller groups called subnets.This helps manage and organize devices on a Network
+    more efficiently, allowing different parts of the networks to be treated separately
+    while still being connected.
+
+Benefits of Subnetting:
+    *security
+    *Performance
+    *Simplified Network management
+    *Easy to solve network issue
+
+Public Network:
+    A public network can be accessed by anyone at any time, like the internet.
+
+Private Network:
+    Private networks, on the other hand, restrict access to the general public 
+    and are typically used to connect private entities such as corporations or schools.
+
+Virtual networks:
+    A virtual network is a network that uses software and wireless technology to connect 
+    devices, servers, virtual machines, and data centers.
+
+Virtual  private network:
+    A Virtual private network or vpn is like a secret tunnel on the internet.
+    when you use it your online activites become private and secure.
+
+--------------------------------------------------------------------------------------------------------------
+
+waterfall methods:
+    Before Devops organization were using this particular model software development methodology.
+    Waterfall methodology is a widely used project management method with a linear approach from beginning
+    to end of a project.
+    It contains five phases:
+            Requirement and Gathering Analysis -> Design -> Development -> test -> Deploy -> Maintenance
+
+Agile methodology:
+    In Agile methodology each project is broken up into serveral "Iteration".
+    All the iteration should be of the same time duration(between 2 to 8 weeks).
+    At the end of each iteration, a working product should be delivered.
+
+    Analyze -> plan -> ( Design -> Build -> Test) -> Deploy
+                                (iteration)
+
+
+What is Devops?
+    Devops combines development(dev) and operation(ops) to increase the efficiency,speed, and security of
+    software development and delivery compared to traditional process.
+
+Devops phases :
+    The Devops culture is implemented in several phases with help of several tools
+
+                            *Plan
+                            *code (Tools - git)
+                            *Build (Tools - Maven and gradel)
+                            *Test (Tools - selenium)
+                            *Deploy (Puppet)
+                            *Operation (Ansible, Docker , Kubernates)
+                            *Monitor (Nagios)
+                            *Integrate (Jenkins)
+
+Devops Stages:
+        stage 1 --->  Version control(SCM --> Source code management)
+        stage 2 --->  Continuous Integration
+        stage 3 --->  Continuous delivery
+        stage 4 --->  Continuous deployment
+
+stage 1 --->  Version control(SCM --> Source code management)
+        Maintains different version of the code.
+            eg: so there are multiple developer write code for particular application, so how 
+                will I know which developer made which commit and what time and which commit is cousing
+                error, how will I revert back to the pervious commit and How will I manages the sourse
+                code (Tool is git)
+
+                SCM has to types
+                    1 . Centralized version control System
+                    2 . Distributed version control system (GIT)
+
+stage 2 ---> CI - Continuous Integration (continuous Build)
+        Continuous Integration means building application continuously.
+        CI is a fundamental practice that involves merging code changes into a central repository.
+            eg: Any developers Made a changes in source code a continuous integration server
+                should pull that code and prepare to build means all(compile, validate, code review,
+                Unit Testing, Integration testing etc)
+    
+stage 3 --->  CD - Continuous delivery (Continuous Test)
+        Deploying the build application to test server performing UAT(user Acceptance testing)
+
+stage 4 ---> CD - Continuous Deployment 
+        Deploying the tested application on the production server for release.
+
+stage 5 --->
+        All the 4 stage will be Monitored(Continuous Monitoring) Tools link (Nagios)
+    
+    CI/CD stands for continuous integration and continuous delivery/deployment, and is a 
+    set of DevOps practices that aims to speed up the software development lifecycle. CI 
+    is a fundamental practice that involves merging code changes into a central repository, 
+    and CD can mean either continuous delivery or continuous deployment. CI/CD pipelines 
+    automate the process of delivering code changes from developers' desktops to production.
+
+Devsecops:
+
+Importance of security:
+    Security is important at all the levels of SDLC.
+    Challenges of implementing Security:
+        There are two biggest Challenges that companies have,
+            1 . Focus on fast development of new features
+            2 . Application Systems become more complex
+                        eg: we have a large containerized microservices applications that running in Kubernates
+                            Clusters on cloud platform using tons of different aws services with data
+                            persistence in ten different types of databases , you may have like a primary 
+                            database, SQL database NoSQL Database, a caching or memory databaseand so on,
+                            and tens of external services that your applications taking to(APIs).
+                            Addtionaly we have a Streamlined CI/CD pipelines that deploys to Clusters. 
+ 
+
+
