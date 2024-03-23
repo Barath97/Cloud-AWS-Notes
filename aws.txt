@@ -145,7 +145,7 @@ Devops Stages:
 stage 1 --->  Version control(SCM --> Source code management)
         Maintains different version of the code.
             eg: so there are multiple developer write code for particular application, so how 
-                will I know which developer made which commit and what time and which commit is cousing
+                will I know which developer made which commit and what time and which commit is causing
                 error, how will I revert back to the pervious commit and How will I manages the sourse
                 code (Tool is git)
 
@@ -153,15 +153,39 @@ stage 1 --->  Version control(SCM --> Source code management)
                     1 . Centralized version control System
                     2 . Distributed version control system (GIT)
 
+                GIT:
+                    Git is a distributed version control system that tracks changes in any set 
+                    of computer files, usually used for coordinating work among programmers who 
+                    are collaboratively developing source code during software development.
+
 stage 2 ---> CI - Continuous Integration (continuous Build)
         Continuous Integration means building application continuously.
-        CI is a fundamental practice that involves merging code changes into a central repository.
-            eg: Any developers Made a changes in source code a continuous integration server
+        CI is a fundamental practice that involves merging code changes into a central repository
+        several times a day.
+            eg: Any developers Made a changes in source code a continuous integration server(Jenkins server)
                 should pull that code and prepare to build means all(compile, validate, code review,
                 Unit Testing, Integration testing etc)
+
+        The tool which is used for Continuous Integration is Jenkins.
+
+        What is Jenkins?
+            Jenkins is an open source automation tool written is java with plugins built for continuous 
+               integration purpose. Plugins allows integration of various Devops stages.
+
+               plugin categorization:
+                        * Test (Junit,..)
+                        * Reports (HTML publisher)
+                        * Notifications (Jenkins build Notifications plugin)
+                        * Deployment (Deploy plugin)
+                        * compile (maven)
+
+                Jenkins Distributed Architecture:
+                       *  Jenkins Master will distribute its workload to the slaves.
+                       *  Jenkins Slaves are generally required to provide the desired environment.
+                                It works on the basic of request recevied from jenkins Master.
     
 stage 3 --->  CD - Continuous delivery (Continuous Test)
-        Deploying the build application to test server performing UAT(user Acceptance testing)
+        Deploying the build application to test server performing UAT(user Acceptance testing) or (End User Testing)
 
 stage 4 ---> CD - Continuous Deployment 
         Deploying the tested application on the production server for release.
@@ -174,6 +198,160 @@ stage 5 --->
     is a fundamental practice that involves merging code changes into a central repository, 
     and CD can mean either continuous delivery or continuous deployment. CI/CD pipelines 
     automate the process of delivering code changes from developers' desktops to production.
+
+
+configuration management:(CM)  ---> Deploy
+    configuration Management is the pratice of handling changes Systematically so that 
+    so that a system maintains its integrity over time.
+    Configuration management(CM) ensures that the current design and build state of the
+    system is known as good & trusted.
+
+        If your updating a software you keep record of what all things you have updated.
+           
+           ***And we achive configuration management by (infrastructure as Code (IAC))
+
+        infrastructure as Code (IAC)
+                    it's about setting up and managing your computer systems, servers, networks, 
+                    and other infrastructure components using code.
+
+            eg: lets talk about the few issue with the deployment of particular application
+                when I build the application when I Deployed to the test server ,there some 
+                dpendencies issue because of my application is not working fine.
+                developer has updated version but production is using older version so my 
+                application is not working fine.
+
+                important point:*****
+                    It helps us to revert to a pervious version of the component if you have replaced
+                    with a new but flawed version.
+
+            There are two types of Congiguration Management approaches:
+                    * push
+                    * pull
+
+            Configuration management Tools:
+                Ansible and saltstack are push based configuration management.push all the things
+                node directly.
+
+                puppet and chef are the pull based configuration management from the central 
+                server.
+
+
+
+            various tools ---> puppet
+                    puppet it a configuration management tool that is used for Deploying configuring
+                    and managing servers.
+                        eg: bigbillion day 
+
+                    it follows master-slaves Architecture 
+                            slaves will pull the central server for changes made in the configuration.
+
+                            puppet slaves sends the facts to puppet masters basically key value data pairs
+
+
+Containerization : (operation)
+        Containers are the lightweight alternative to virtual machines.It a container which contains
+        my application.
+
+        we have docker containers that will contains the binaries and libraries required to particular
+        application.with docker Engine and HostOS(only).
+
+        docker files(microservices) -> I create docker Image (we can create as many as docker container) ->
+            Docker image which I can upload to Docker Hub which is git repository of Docker Images ->
+                any team can pull as many as containers for staging server and production server.
+
+            Few Basic Docker command:
+                    to get all the image having in local system ->  docker images
+
+                    To pull a image eg: ubuntu image -> docker pull ubuntu
+
+                    To run a container -> docker run -it ubuntu
+
+Continuous Monitoring :(Tools -> nagios)
+        Continuous Monitoring is all about ability of organization to detect, report the attacks that 
+        occurs in its infrastructure.
+
+        Continuous Monitoring tools resolve any system errors (error like low memory,unreachable servers etc)
+
+        
+What is version control system:
+        A version control system (VCS) is a software tool that tracks changes to files over time. VCSs are 
+        also known as SCM (Source Code Management) tools.
+
+what is git?
+    Git is a free and open-source version control system,Git is distributed: every developer has the full 
+    history of their code repository locally.
+
+what is GITHUB:
+    GitHub is an online software development platform. It's used for storing, tracking, and collaborating 
+    on software projects. It makes it easy for developers to share code files and collaborate with fellow 
+    developers on open-source projects.
+
+Docker:
+
+Problems before Docker:
+    1.  An Application works on developers laptop but not in testing or production. This is due to 
+        difference in computing environment between DEV, Test and production. 
+
+    2. The idea behind microservices is that some types of application become easier to build and 
+        maintain when they broken into smaller, Composabel pieces which work together.Each services
+        Developed separately.
+
+How Docker solves these problem:
+        you can run several microservices in the same VM by running various Docker containers for
+        each microservices.
+
+        so, we have Host Machine on that top we have virtual machine on that top of virtual machines
+        we have multiple docker containers with dependencies.
+
+what is Docker:
+        Docker is a tool designed to make it easier to create, deploy, and run application by using 
+        containers.
+        Docker containers are lightweight alternative to Virtual machines and it uses the host Os.
+        You don't have to pre-allocate any RAM in containers.
+
+Docker work flow:
+        (Docker File) builds a Docker image -> that image contains all project codes -> You can run that
+         images to create as many Docker container on Virtual machine -> Then Images uplaoded on Docker Hub
+         from Docker hub any one can pull the image and build a containers.
+
+Dockers components:
+        1. Docker registry:
+              * Docker Registry is a storage component for Docker Images.
+              * we can store the images in either public/private repository.
+              * Docker HUB is Docker very own cloud repository.
+            
+
+Kubernetes:
+        Kubernetes is an open sources container Management tool which automates container deployment,
+        containers scaling and container load balancing.
+
+Introduction to Ansible:
+        Ansible is a configuration management, Deployment tool, is push based configuration management
+        tool.
+        It automates your entire IT infrastructure by providing large productivity gains.
+
+workflow of Ansible:
+    
+    eg: lets say I am using version control system(git) and I am also using Jenkins for Continuous
+        Integration now Jenkins will extract code from get every time there is is new commit
+        and making software built and later, this build will get Deployed in the test server for
+        testing Now if the changes are kept making in the code base continuously you would have to
+        configure your test and product server continuously will changes according. So what 
+        Ansible does that it continuously keep checking the version control system(git) here 
+        so it can configure the test and production server accordingly and quick. And it 
+        makes your application deployment very easy.
+
+Puppet:
+        Puppet is a Configuration management tool that is used for Deploying, Configuring and 
+        Managing servers.
+
+            Its uses a Master- slave Architecture
+
+            configuration are pulled from the master by the Nodes.
+
+            
+
+
 
 Devsecops:
 
