@@ -1,109 +1,3 @@
-what is data?
-    Data refers to raw facts, figures, observations, or information that can be collected, 
-    stored, and processed. It can take various forms, including numbers, text, images, 
-    audio, video, and more. Data can be structured, such as in databases where it's 
-    organized into tables with defined relationships, or unstructured, such as in text 
-    documents or multimedia files.
-
-There are two types of software :
-    * Application software 
-    * System software
-
-Application software:
-    Collection of programs is called Application software.
-
-System software:
-    System software = Operating System
-
-Operating System:
-    Interface between user and machine(computer hardware).
-    Resources manager of a computer.
-    It will manage the processes, memory and files.
-    An operating system (OS) is a system software that connects a computer user with the
-     computer's hardware. It is the main system software that allows a device to run.
-    The software that contains the core components of the operating system is called the
-    Kernal.
-
-Kernal:
-    The kernel is a core component of an operating system and serves as the main interface
-    between the computer's hardware and OS. The kernel enables multiple applications to 
-    share hardware resources by providing access to CPU, memory, disk I/O, and networking.
-
-Different types of OS:
-    *Linux
-    *Microsoft Windows
-    *Apple Mac OS
-
-types of OS:
-    Client OS 
-    Server OS 
-
-Client OS:
-    A client operating system (OS) is a simple operating system that runs on various client
-    devices, such as computers, laptops, smartphones, and tablets. It is different from
-    centralized servers because it only supports one user. Client OS manages local resources, 
-    including files, printers, and peripheral devices. It is used to access services 
-    provided by servers, such as Windows, Android, Firefox, Symbian, and macOS.
-
-Server OS:
-    Imagine you have a small business and you want to set up a server to store all your files,
-    manage emails, host a website, and run some custom business applications. You'd need a server
-    operating system to handle all these tasks efficiently.
-    One popular example of a server operating system is Microsoft Windows Server. 
-    It's designed specifically for servers and comes with features tailored for managing 
-    networks, storing data, hosting websites, running applications, and more. With Windows Server,
-    you can set up user accounts, manage permissions, configure security settings, and ensure that 
-    your business operations run smoothly.
-    So, in this scenario, Windows Server would be the server operating system you'd install on your 
-    server computer to manage all your business needs effectively.
-
-Types of services:
-    client = Service receiver
-    server = service provider
-
-How server is controlling client computer?
-    * Server computers and client computers are connected in "Network".
-    * we need to configure server computer configuration in client computer.
-    * client request will handle by the server and it will respond to the client.
-    
-How data transfer between two computers?
-    Application > Data > NIC(Network Interface card) > Packet > transfer in cable(RJ45) > Packet > NIC > Data > Application
-
-IP Address:
-    An IP address, or Internet Protocol address, is a unique number that identifies a 
-    device connected to the internet or a local network. IP addresses contain location 
-    information and allow devices to communicate with each other. The internet needs IP 
-    addresses to differentiate between different devices, such as computers, routers, and websites.
-
-Subnetting:
-    In networking it means taking a large group of IP addresses and splitting them into
-    smaller groups called subnets.This helps manage and organize devices on a Network
-    more efficiently, allowing different parts of the networks to be treated separately
-    while still being connected.
-
-Benefits of Subnetting:
-    *security
-    *Performance
-    *Simplified Network management
-    *Easy to solve network issue
-
-Public Network:
-    A public network can be accessed by anyone at any time, like the internet.
-
-Private Network:
-    Private networks, on the other hand, restrict access to the general public 
-    and are typically used to connect private entities such as corporations or schools.
-
-Virtual networks:
-    A virtual network is a network that uses software and wireless technology to connect 
-    devices, servers, virtual machines, and data centers.
-
-Virtual  private network:
-    A Virtual private network or vpn is like a secret tunnel on the internet.
-    when you use it your online activites become private and secure.
-
---------------------------------------------------------------------------------------------------------------
-
 waterfall methods:
     Before Devops organization were using this particular model software development methodology.
     Waterfall methodology is a widely used project management method with a linear approach from beginning
@@ -414,8 +308,112 @@ What is Cluster :
     Cluster is a group of virtual machine(VI) that works together to perform a task. 
 
 The Tool which is used for security:
-         SonarQube
+     SonarQube
             
+------------------------------------------------------------------------------------------------------------------
+what is data?
+    Data refers to raw facts, figures, observations, or information that can be collected, 
+    stored, and processed. It can take various forms, including numbers, text, images, 
+    audio, video, and more. Data can be structured, such as in databases where it's 
+    organized into tables with defined relationships, or unstructured, such as in text 
+    documents or multimedia files.
+
+There are two types of software :
+    * Application software 
+    * System software
+
+Application software:
+    Collection of programs is called Application software.
+
+System software:
+    System software = Operating System
+
+Operating System:
+    Interface between user and machine(computer hardware).
+    Resources manager of a computer.
+    It will manage the processes, memory and files.
+    An operating system (OS) is a system software that connects a computer user with the
+     computer's hardware. It is the main system software that allows a device to run.
+    The software that contains the core components of the operating system is called the
+    Kernal.
+
+Kernal:
+    The kernel is a core component of an operating system and serves as the main interface
+    between the computer's hardware and OS. The kernel enables multiple applications to 
+    share hardware resources by providing access to CPU, memory, disk I/O, and networking.
+
+Different types of OS:
+    *Linux
+    *Microsoft Windows
+    *Apple Mac OS
+
+types of OS:
+    Client OS 
+    Server OS 
+
+Client OS:
+    A client operating system (OS) is a simple operating system that runs on various client
+    devices, such as computers, laptops, smartphones, and tablets. It is different from
+    centralized servers because it only supports one user. Client OS manages local resources, 
+    including files, printers, and peripheral devices. It is used to access services 
+    provided by servers, such as Windows, Android, Firefox, Symbian, and macOS.
+
+Server OS:
+    Imagine you have a small business and you want to set up a server to store all your files,
+    manage emails, host a website, and run some custom business applications. You'd need a server
+    operating system to handle all these tasks efficiently.
+    One popular example of a server operating system is Microsoft Windows Server. 
+    It's designed specifically for servers and comes with features tailored for managing 
+    networks, storing data, hosting websites, running applications, and more. With Windows Server,
+    you can set up user accounts, manage permissions, configure security settings, and ensure that 
+    your business operations run smoothly.
+    So, in this scenario, Windows Server would be the server operating system you'd install on your 
+    server computer to manage all your business needs effectively.
+
+Types of services:
+    client = Service receiver
+    server = service provider
+
+How server is controlling client computer?
+    * Server computers and client computers are connected in "Network".
+    * we need to configure server computer configuration in client computer.
+    * client request will handle by the server and it will respond to the client.
+    
+How data transfer between two computers?
+    Application > Data > NIC(Network Interface card) > Packet > transfer in cable(RJ45) > Packet > NIC > Data > Application
+
+IP Address:
+    An IP address, or Internet Protocol address, is a unique number that identifies a 
+    device connected to the internet or a local network. IP addresses contain location 
+    information and allow devices to communicate with each other. The internet needs IP 
+    addresses to differentiate between different devices, such as computers, routers, and websites.
+
+Subnetting:
+    In networking it means taking a large group of IP addresses and splitting them into
+    smaller groups called subnets.This helps manage and organize devices on a Network
+    more efficiently, allowing different parts of the networks to be treated separately
+    while still being connected.
+
+Benefits of Subnetting:
+    *security
+    *Performance
+    *Simplified Network management
+    *Easy to solve network issue
+
+Public Network:
+    A public network can be accessed by anyone at any time, like the internet.
+
+Private Network:
+    Private networks, on the other hand, restrict access to the general public 
+    and are typically used to connect private entities such as corporations or schools.
+
+Virtual networks:
+    A virtual network is a network that uses software and wireless technology to connect 
+    devices, servers, virtual machines, and data centers.
+
+Virtual  private network:
+    A Virtual private network or vpn is like a secret tunnel on the internet.
+    when you use it your online activites become private and secure.
 
 
 
