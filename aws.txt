@@ -136,6 +136,10 @@ Devops phases :
                             *Monitor (Nagios)
                             *Integrate (Jenkins)
 
+what is CI/CD pipeline:
+    A CI/CD pipeline helps you to automate steps in your software delivery process, such as initiating
+    code builds, running automated tests, deploying to a staging or product environment.
+
 Devops Stages:
         stage 1 --->  Version control(SCM --> Source code management)
         stage 2 --->  Continuous Integration
@@ -349,9 +353,22 @@ Puppet:
 
             configuration are pulled from the master by the Nodes.
 
-            
+what is continuous Monitoring?
+        Continuous Monitoring is basically an effective system where the entine IT Infrastructure
+        starting from your application to your business process to your server is monitored in 
+        an ongoing way and in an automated fashion.
 
+What is Nagios?
+        Nagios is a Continuous Monitoring Tool and your entire infrastructure to ensure System,
+        applications, services, and business process are functioning properly.
 
+why we need continuous Monitoring:
+        1 . failure of CI/CD pipelines
+        2 . Infrastructure issue
+        3 . Application issue
+        4 . Static code Analysis
+
+--------------------------------------------------------------------------------------------------------------
 
 Devsecops:
 
@@ -367,6 +384,41 @@ Importance of security:
                             database, SQL database NoSQL Database, a caching or memory databaseand so on,
                             and tens of external services that your applications taking to(APIs).
                             Addtionaly we have a Streamlined CI/CD pipelines that deploys to Clusters. 
+
+what is Devsecops:
+    Devsecops stands for development, security, operations. Its a practice that automates the integration 
+    of Security at all the stage of software development lifecycle.
+
+SAST(Static Application Security Testing)
+    It a software testing technique that scan an application source code, byte or binaries to identify 
+    security velnerabities. SAST is also known as static code Analysis or white box testing.
+        SAST scans an application before the code is complied. It helps developers find and fix 
+    issue early in the development process.SAST identifies the root cause of velnerabities and help 
+    remediate the underlying security flaws.
+
+SCA (Software Composition Analysis)
+    SCA is automated process that identifies open source software codebase.It a review of the open 
+    source components, dependencies, and license requirements embedded in software supply chain.If 
+    it is found any issue in code it will notify.
+
+DAST(Dynamic Application security Testing)
+    It is Non Functional testing process that helps to identify security velnerabities in application.
+    DAST scans running application to identity vulnerabilities such as,
+            *input/output validation issue
+            *configuration mistakes
+            *errors
+            *SQL injections
+            *Cross site scripting
+
+What is Cluster :
+    Cluster is a group of virtual machine(VI) that works together to perform a task. 
+
+The Tool which is used for security:
+         SonarQube
+            
+
+
+
  
 
 
